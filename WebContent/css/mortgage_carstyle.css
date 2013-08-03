@@ -28,7 +28,10 @@ body {
 #mortgage_car_top_head_logo {
 	float: left;
 }
-
+#mortgage_car_top_head_logo img{
+	width: 236px;
+	height: 65px;
+}
 #mortgage_car_top_head_a {
 	text-decoration: none;
 	color: #666666;

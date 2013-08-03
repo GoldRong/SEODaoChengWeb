@@ -28,7 +28,10 @@ body {
 #zheren_top_head_logo {
 	float: left;
 }
-
+#zheren_top_head_logo img{
+	width: 236px;
+	height: 65px;
+}
 #zheren_top_head_a {
 	text-decoration: none;
 	color: #666666;

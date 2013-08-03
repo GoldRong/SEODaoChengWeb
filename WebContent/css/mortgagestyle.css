@@ -28,6 +28,10 @@ body {
 #mortgage_top_head_logo {
 	float: left;
 }
+#mortgage_top_head_logo img{
+	width: 236px;
+	height: 65px;
+}
 
 #mortgage_top_head_a {
 	text-decoration: none;
