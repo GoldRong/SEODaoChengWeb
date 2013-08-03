@@ -134,6 +134,11 @@ body {
 	height: 130px;
 	background-color: transparent;
 }
+#zheren_center_div_top img{
+	width: 1100px;
+	height: 130px;
+	background-color: transparent;
+}
 #zheren_center_div_inside{
 	width: 1100px;
 	height: 620px;
@@ -255,6 +260,10 @@ body {
 	background-color: transparent;
 }
 #zheren_center_div_inside_right_div_content_img{
+	width: 800px;
+	height: 172px;
+}
+#zheren_center_div_inside_right_div_content_img img{
 	width: 800px;
 	height: 172px;
 }

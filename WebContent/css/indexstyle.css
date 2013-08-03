@@ -127,6 +127,7 @@ body {
 }
 
 #index_center_div_outside {
+	visibility:hidden;
 	width: 1100px;
 	height: 422px;
 	margin: 0 auto;

@@ -2,71 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src="scripts/jquery-1.10.1.js"></script>
 <link rel="stylesheet" type="text/css" href="css/about_joinstyle.css">
 <link rel="shortcut icon" href="images/logo_mini.ico" />
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-<style type="text/css">
-    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
-    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
-</style>
-<script type="text/javascript">
-	var nowabout_join;
-	var submenu;
-	var menuitem;
-	var leftmenu;
-	var leftmenuitem;
-	
-	$(document).ready(function(){
-		//初始化
-		init();
-		//初始化头部的菜单
-		$(".about_join_top_div_menu_li").mouseover(function(){
-				nowabout_join=$(this).index();
-				submenu.hide();
-				$(submenu[nowabout_join]).show();
-			});
-		
-		//left 菜单的切换
-		$("#about_join_center_div_inside_left_li_div_unsecured").click(function(){
-			$("#about_join_center_div_inside_left_ul_item_unsecured").slideToggle();
-		});
-		$("#about_join_center_div_inside_left_li_div_mortgage").click(function(){
-			$("#about_join_center_div_inside_left_ul_item_mortgage").slideToggle();
-		});
-		$("#about_join_center_div_inside_left_li_div_banks").click(function(){
-			$("#about_join_center_div_inside_left_ul_item_banks").slideToggle();
-		});
-		$("#about_join_center_div_inside_left_li_div_zheren").click(function(){
-			$("#about_join_center_div_inside_left_ul_item_zheren").slideToggle();
-		});
-		$("#about_join_center_div_inside_left_li_div_about_join").click(function(){
-			$("#about_join_center_div_inside_left_ul_item_about_join").slideToggle();
-		});
-		
-		function init(){
-			submenu=$(".about_join_top_div_menu_sub_p");
-			$(submenu[5]).show();
-			
-			menuitem=$(".about_join_top_div_menu_li");
-			$(menuitem[5]).css("background-color","gray");
-			initLeftMenu();
-			
-			var leftul=$(".about_join_center_div_inside_left_ul_item");
-			$(leftul[4]).show();
-			
-		}
-		//初始化左菜单
-		function initLeftMenu(){
-			leftmenu=$(".about_join_center_div_inside_left_li");
-			leftmenuul=$(".about_join_center_div_inside_left_ul_item");
-		}
-		//初始化百度地图
-		function initBaiduMap(){
-			
-		}
-	});
-</script>
 <!--贷款，融资，车贷，房贷  -->
 <meta name="keywords" content="贷款，融资，车贷，房贷,">
 <meta name="description" content="贷款，融资，车贷，房贷，成都道诚资产管理有限公司！">
@@ -261,6 +198,69 @@
 			</div>
 		</div>
 	</div>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<style type="text/css">
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript">
+	var nowabout_join;
+	var submenu;
+	var menuitem;
+	var leftmenu;
+	var leftmenuitem;
+	
+	$(document).ready(function(){
+		//初始化
+		init();
+		//初始化头部的菜单
+		$(".about_join_top_div_menu_li").mouseover(function(){
+				nowabout_join=$(this).index();
+				submenu.hide();
+				$(submenu[nowabout_join]).show();
+			});
+		
+		//left 菜单的切换
+		$("#about_join_center_div_inside_left_li_div_unsecured").click(function(){
+			$("#about_join_center_div_inside_left_ul_item_unsecured").slideToggle();
+		});
+		$("#about_join_center_div_inside_left_li_div_mortgage").click(function(){
+			$("#about_join_center_div_inside_left_ul_item_mortgage").slideToggle();
+		});
+		$("#about_join_center_div_inside_left_li_div_banks").click(function(){
+			$("#about_join_center_div_inside_left_ul_item_banks").slideToggle();
+		});
+		$("#about_join_center_div_inside_left_li_div_zheren").click(function(){
+			$("#about_join_center_div_inside_left_ul_item_zheren").slideToggle();
+		});
+		$("#about_join_center_div_inside_left_li_div_about_join").click(function(){
+			$("#about_join_center_div_inside_left_ul_item_about_join").slideToggle();
+		});
+		
+		function init(){
+			submenu=$(".about_join_top_div_menu_sub_p");
+			$(submenu[5]).show();
+			
+			menuitem=$(".about_join_top_div_menu_li");
+			$(menuitem[5]).css("background-color","gray");
+			initLeftMenu();
+			
+			var leftul=$(".about_join_center_div_inside_left_ul_item");
+			$(leftul[4]).show();
+			
+		}
+		//初始化左菜单
+		function initLeftMenu(){
+			leftmenu=$(".about_join_center_div_inside_left_li");
+			leftmenuul=$(".about_join_center_div_inside_left_ul_item");
+		}
+		//初始化百度地图
+		function initBaiduMap(){
+			
+		}
+	});
+</script>
 <!-- Baidu Button BEGIN -->
 <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=0&amp;pos=right&amp;uid=6741054" ></script>
 <script type="text/javascript" id="bdshell_js"></script>

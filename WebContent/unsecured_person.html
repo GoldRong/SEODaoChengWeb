@@ -2,62 +2,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src="scripts/jquery-1.10.1.js"></script>
 <link rel="stylesheet" type="text/css" href="css/unsecured_personstyle.css">
 <link rel="shortcut icon" href="images/logo_mini.ico" />
 
-<script type="text/javascript">
-	var nowunsecured_person;
-	var submenu;
-	var menuitem;
-	var leftmenu;
-	var leftmenuitem;
-	
-	$(document).ready(function(){
-		//初始化
-		init();
-		//初始化头部的菜单
-		$(".unsecured_person_top_div_menu_li").mouseover(function(){
-				nowunsecured_person=$(this).index();
-				submenu.hide();
-				$(submenu[nowunsecured_person]).show();
-			});
-		
-		//left 菜单的切换
-		$("#unsecured_person_center_div_inside_left_li_div_unsecured_person").click(function(){
-			$("#unsecured_person_center_div_inside_left_ul_item_unsecured_person").slideToggle();
-		});
-		$("#unsecured_person_center_div_inside_left_li_div_mortgage").click(function(){
-			$("#unsecured_person_center_div_inside_left_ul_item_mortgage").slideToggle();
-		});
-		$("#unsecured_person_center_div_inside_left_li_div_banks").click(function(){
-			$("#unsecured_person_center_div_inside_left_ul_item_banks").slideToggle();
-		});
-		$("#unsecured_person_center_div_inside_left_li_div_zheren").click(function(){
-			$("#unsecured_person_center_div_inside_left_ul_item_zheren").slideToggle();
-		});
-		$("#unsecured_person_center_div_inside_left_li_div_about").click(function(){
-			$("#unsecured_person_center_div_inside_left_ul_item_about").slideToggle();
-		});
-		function init(){
-			submenu=$(".unsecured_person_top_div_menu_sub_p");
-			$(submenu[1]).show();
-			menuitem=$(".unsecured_person_top_div_menu_li");
-			$(menuitem[1]).css("background-color","gray");
-			initLeftMenu();
-			
-			var leftul=$(".unsecured_person_center_div_inside_left_ul_item");
-			$(leftul[0]).show();
-			
-		}
-		//初始化左菜单
-		function initLeftMenu(){
-			leftmenu=$(".unsecured_person_center_div_inside_left_li");
-			leftmenuul=$(".unsecured_person_center_div_inside_left_ul_item");
-		}
-		
-	});
-</script>
 <!--贷款，融资，车贷，房贷  -->
 <meta name="keywords" content="贷款，融资，车贷，房贷,">
 <meta name="description" content="贷款，融资，车贷，房贷，成都道诚资产管理有限公司！">
@@ -293,6 +240,59 @@
 			</div>
 		</div>
 	</div>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+<script type="text/javascript">
+	var nowunsecured_person;
+	var submenu;
+	var menuitem;
+	var leftmenu;
+	var leftmenuitem;
+	
+	$(document).ready(function(){
+		//初始化
+		init();
+		//初始化头部的菜单
+		$(".unsecured_person_top_div_menu_li").mouseover(function(){
+				nowunsecured_person=$(this).index();
+				submenu.hide();
+				$(submenu[nowunsecured_person]).show();
+			});
+		
+		//left 菜单的切换
+		$("#unsecured_person_center_div_inside_left_li_div_unsecured_person").click(function(){
+			$("#unsecured_person_center_div_inside_left_ul_item_unsecured_person").slideToggle();
+		});
+		$("#unsecured_person_center_div_inside_left_li_div_mortgage").click(function(){
+			$("#unsecured_person_center_div_inside_left_ul_item_mortgage").slideToggle();
+		});
+		$("#unsecured_person_center_div_inside_left_li_div_banks").click(function(){
+			$("#unsecured_person_center_div_inside_left_ul_item_banks").slideToggle();
+		});
+		$("#unsecured_person_center_div_inside_left_li_div_zheren").click(function(){
+			$("#unsecured_person_center_div_inside_left_ul_item_zheren").slideToggle();
+		});
+		$("#unsecured_person_center_div_inside_left_li_div_about").click(function(){
+			$("#unsecured_person_center_div_inside_left_ul_item_about").slideToggle();
+		});
+		function init(){
+			submenu=$(".unsecured_person_top_div_menu_sub_p");
+			$(submenu[1]).show();
+			menuitem=$(".unsecured_person_top_div_menu_li");
+			$(menuitem[1]).css("background-color","gray");
+			initLeftMenu();
+			
+			var leftul=$(".unsecured_person_center_div_inside_left_ul_item");
+			$(leftul[0]).show();
+			
+		}
+		//初始化左菜单
+		function initLeftMenu(){
+			leftmenu=$(".unsecured_person_center_div_inside_left_li");
+			leftmenuul=$(".unsecured_person_center_div_inside_left_ul_item");
+		}
+		
+	});
+</script>
 <!-- Baidu Button BEGIN -->
 <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=0&amp;pos=right&amp;uid=6741054" ></script>
 <script type="text/javascript" id="bdshell_js"></script>
