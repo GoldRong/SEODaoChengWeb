@@ -29,6 +29,11 @@ body {
 	float: left;
 }
 
+#index_top_head_logo img{
+	width: 236px;
+	height: 65px;
+}
+
 #index_top_head_a {
 	text-decoration: none;
 	color: #666666;
@@ -129,6 +134,10 @@ body {
 }
 #KinSlideshow{
 	
+}
+#KinSlideshow img{
+	width: 1100px;
+	height: 422px;
 }
 #index_bottom_div {
 	margin: 0 auto;

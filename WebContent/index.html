@@ -3,36 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="baidu-site-verification" content="iVLcKqWafd" />
-<script type="text/javascript" src="scripts/jquery-1.10.1.js"></script>
-<script type="text/javascript" src="scripts/jquery.KinSlideshow-1.0.js"></script>
 <link rel="stylesheet" type="text/css" href="css/indexstyle.css">
 <link rel="shortcut icon" href="images/logo_mini.ico" />
-<script type="text/javascript">
-	var nowindex;
-	var submenu;
-	var menuitem;
-	
-	$(document).ready(function(){
-		//初始化
-		init();
-		
-		$(".index_top_div_menu_li").mouseover(function(){
-				nowindex=$(this).index();
-				submenu.hide();
-				$(submenu[nowindex]).show();
-			});
-		
-		function init(){
-			submenu=$(".index_top_div_menu_sub_p");
-			$(submenu[0]).show();
-			
-			menuitem=$(".index_top_div_menu_li");
-			$(menuitem[0]).css("background-color","gray");
-			
-			$("#KinSlideshow").KinSlideshow();
-		}
-	});
-</script>
 <!--贷款，融资，车贷，房贷  -->
 <meta name="keywords" content="贷款，融资，车贷，房贷,">
 <meta name="description" content="贷款，融资，车贷，房贷，成都道诚资产管理有限公司！">
@@ -146,6 +118,36 @@
 			</div>
 		</div>
 	</div>
+
+<script type="text/javascript" src="scripts/jquery-1.10.1.js"></script>
+<script type="text/javascript" src="scripts/jquery.KinSlideshow-1.0.js"></script>
+<script type="text/javascript">
+	var nowindex;
+	var submenu;
+	var menuitem;
+	
+	$(document).ready(function(){
+		//初始化
+		init();
+		
+		$(".index_top_div_menu_li").mouseover(function(){
+				nowindex=$(this).index();
+				submenu.hide();
+				$(submenu[nowindex]).show();
+			});
+		
+		function init(){
+			submenu=$(".index_top_div_menu_sub_p");
+			$(submenu[0]).show();
+			
+			menuitem=$(".index_top_div_menu_li");
+			$(menuitem[0]).css("background-color","gray");
+			
+			$("#KinSlideshow").KinSlideshow();
+		}
+	});
+</script>	
+
 <!-- Baidu Button BEGIN -->
 <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=0&amp;pos=right&amp;uid=6741054" ></script>
 <script type="text/javascript" id="bdshell_js"></script>
