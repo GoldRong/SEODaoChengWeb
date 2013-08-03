@@ -1,0 +1,410 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color:white;
+	margin: 0;
+	margin-top: 20px;
+	font-family:'Microsoft YaHei',STHeiti,sans-serif;
+}
+
+#mortgage_car_super_div {
+	width: auto;
+	height: auto;
+}
+
+#mortgage_car_top_div {
+	margin: 0 auto;
+	width: 1100px;
+	height: 100px;
+}
+
+#mortgage_car_top_head {
+	margin: 0 auto;
+	width: 1100px;
+	height: 65px;
+	background-color: transparent;
+}
+
+#mortgage_car_top_head_logo {
+	float: left;
+}
+
+#mortgage_car_top_head_a {
+	text-decoration: none;
+	color: #666666;
+	font-size: 14px;
+}
+
+#mortgage_car_top_head_a:HOVER {
+	color: blue;
+}
+
+#mortgage_car_top_head_login {
+	float: right;
+	margin-right: 15px;
+	margin-top: 15px;
+}
+
+#mortgage_car_top_div_menu {
+	margin: 0 auto;
+	width: 1100px;
+	height: 65px;
+	background-color: transparent;
+}
+
+#mortgage_car_top_div_menu_ul {
+	width: 1100px;
+	height: 35px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	background-color: transparent;
+}
+
+.mortgage_car_top_div_menu_li {
+	float: left;
+	width: 181px;
+	height: 35px;
+	background-color: #b20000;
+	margin-right: 2px;
+}
+
+.mortgage_car_top_div_menu_li:HOVER {
+	background-color: gray;
+}
+
+.mortgage_car_top_div_menu_li_a {
+	float:left;
+	padding-top:8px;
+	padding-left:40px;
+	text-decoration: none;
+	width:165px; 
+	color: white;
+	font-size:16px;
+	font-weight:bold;
+	margin: 0 auto;
+}
+
+#mortgage_car_top_div_submenu{
+	width:auto;
+	height:30px;
+	background-color: yellow;
+	background:#fff url(../images/main2_bg.jpg) 0 0 repeat-x;
+}
+
+#mortgage_car_top_div_menu_sub{
+	margin: 0 auto;
+	width:1100px;
+	height:30px;
+	background-color: transparent;
+}
+.mortgage_car_top_div_menu_sub_p{
+	margin: 0;
+	padding: 0;
+	padding-top:5px;
+	display: none;
+}
+
+.mortgage_car_top_div_menu_sub_p a{
+	color: gray;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.mortgage_car_top_div_menu_sub_p a:HOVER{
+	color: #004ea5;
+}
+
+#mortgage_car_center_div {
+	margin: 0 auto;
+	width: auto;
+	height: 750px;
+	background-color: transparent;
+}
+
+#mortgage_car_center_div_outside {
+	width: 1100px;
+	height: 750px;
+	margin: 0 auto;
+	background-color: transparent;
+}
+#mortgage_car_center_div_top{
+	width: 1100px;
+	height: 130px;
+	background-color: transparent;
+}
+#mortgage_car_center_div_inside{
+	width: 1100px;
+	height: 620px;
+	background-color: transparent;
+}
+#mortgage_car_center_div_inside_left{
+	width: 210px;
+	height: 620px;
+	background-color: transparent;
+	float: left;
+}
+#mortgage_car_center_div_inside_left_menu{
+	position:relative;
+	padding-top:30px;
+	margin:0 auto;
+	width: 190px;
+	height: 590px;
+	background-color: #f9f9f9;
+}
+
+#mortgage_car_center_div_inside_left_ul{
+	margin: 0;
+	padding: 0;
+}
+.mortgage_car_center_div_inside_left_li{
+	list-style-type: none;
+	margin-bottom: 2px;
+}
+.mortgage_car_center_div_inside_left_li_div{
+	width: auto;
+	height: 30px;
+	background-color: silver;
+}
+
+.mortgage_car_center_div_inside_left_li_div:HOVER{
+	cursor: pointer;
+}
+
+.mortgage_car_center_div_inside_left_a{
+	position:relative;
+	color: white;
+	font-size:18px;
+	top:3px;
+	text-decoration: none;
+	margin-left: 15px;
+}
+.mortgage_car_center_div_inside_left_ul_item{
+	display: none;
+}
+.mortgage_car_center_div_inside_left_li_item{
+	list-style:none;
+	list-style-image: url("../images/ul_li_blue_dot.png");
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.mortgage_car_center_div_inside_left_li_item_a{
+	color: gray;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+.mortgage_car_center_div_inside_left_li_item_a:HOVER{
+	text-decoration: underline;
+	color: #018be2;
+}
+#mortgage_car_center_div_inside_right{
+	float:left;
+	width: 890px;
+	height: 620px;
+	background-color: transparent;
+}
+#mortgage_car_center_div_inside_right_div{
+	position:relative;
+	left:50px;
+	top:10px;
+	width: 800px;
+	height: 550px;
+	background-color: transparent;
+}
+
+#mortgage_car_center_div_inside_right_div_title{
+	width: 800px;
+	height: 80px;
+	background-color: transparent;
+}
+#mortgage_car_center_div_inside_right_div_title_h2{
+	width: 240px;
+	height:80px;
+	float: left;
+	background-color: transparent;
+}
+#mortgage_car_center_div_inside_right_div_title_h2 h2{
+	font-size:28px;
+	color: #004ea5;
+	background-color: transparent;
+	margin: 0;
+	font-weight:bolder;
+	margin-top: 20px;
+}
+#mortgage_car_center_div_inside_right_div_title_h5{
+	width:200px;
+	height:80px;
+	float: left;
+	background-color: transparent;
+}
+#mortgage_car_center_div_inside_right_div_title_h5 h5{
+	font-weight: bolder;
+	background-color: transparent;
+	margin: 0;
+	margin-top: 35px;
+}
+
+#mortgage_car_center_div_inside_right_div_content{
+	width: 800px;
+	height: 520px;
+	background-color: transparent;
+}
+
+#mortgage_car_center_div_inside_right_div_content_p{
+	width: 800px;
+	height: 200px;
+	background-color: transparent;
+	margin: 0;
+}
+#mortgage_car_center_div_inside_right_div_content_div{
+	width: 800px;
+	height: 320px;
+	background-color: transparent;
+	margin: 0;
+}
+
+#mortgage_car_center_div_inside_right_div_content_div_title{
+	width: 800px;
+	height: 60px;
+	background-color: transparent;
+	margin: 0;	
+}
+#mortgage_car_center_div_inside_right_div_content_div_title p{
+	margin:0;
+	color: #018be2;
+}
+#mortgage_car_center_div_inside_right_div_content_div_content{
+	width: 800px;
+	height: 260px;
+	background-color: transparent;
+	margin: 0;
+	background-color: transparent;
+}
+
+.mortgage_car_center_div_inside_right_div_content_div_content_div{
+	width: 266px;
+	height: 260px;
+	float: left;
+	background-color: transparent;
+}
+
+.mortgage_car_center_div_inside_right_div_content_div_content_div_inside{
+	width: 266px;
+	height: 260px;
+	float: left;
+	background-color: transparent;
+}
+
+.mortgage_car_center_div_inside_right_div_content_div_content_div_inside_img{
+	width: 226px;
+	height: 140px;
+	margin:0 auto;
+	background-color: transparent;
+}
+.mortgage_car_center_div_inside_right_div_content_div_content_div_inside_img a{
+	
+}
+.mortgage_car_center_div_inside_right_div_content_div_content_div_inside_img img{
+	width: 226px;
+	height: 140px;
+}
+.mortgage_car_center_div_inside_right_div_content_div_content_div_inside p{
+	margin:0;
+	margin-left: 20px;
+	margin-top: 5px;
+	font-size: 14px;
+	font-weight: lighter;
+}
+.mortgage_car_center_div_inside_right_div_content_div_content_div_inside a{
+	margin-left: 20px;
+	color: #018be2;
+	font-size: 14px;
+	text-decoration: none;
+}
+.mortgage_car_center_div_inside_right_div_content_div_content_div_inside a:HOVER{
+	text-decoration: underline;
+}
+#mortgage_car_bottom_div_foot {
+	width: auto;
+	height: 160px;
+	background-color: #e8edf2;
+}
+
+#mortgage_car_bottom_div_foot_context {
+	margin: 0 auto;
+	height: 160px;
+	width: 1100px;
+	position: relative;
+	text-align: center;
+}
+
+#mortgage_car_bottom_div_foot_context_link {
+	width: 1100px;
+	height: 40px;
+}
+
+#mortgage_car_bottom_div_foot_context_link div {
+	margin: 0 auto;
+	width: 650px;
+	height: 40px;
+	padding-top: 10px;
+}
+
+#mortgage_car_bottom_div_foot_context_link a {
+	text-decoration: none;
+	line-height: 30px;
+	color: #333333;
+	font-size: 14px;
+}
+
+#mortgage_car_bottom_div_foot_context_link span {
+	padding: 0 15px;
+	color: #e5dab5;
+}
+
+#mortgage_car_bottom_div_foot_context_copyright {
+	width: 1100px;
+	height: 30px;
+	background-color: transparent;
+}
+
+#mortgage_car_bottom_div_foot_context_copyright span {
+	margin: 0 auto;
+	top: 5px;
+	position: relative;
+	color: #666;
+	font-size: 14px;
+}
+
+#mortgage_car_bottom_div_foot_context_platform {
+	width: 1100px;
+	height: 30px;
+	color: #666;
+	font-size: 14px;
+	background-color: transparent;
+}
+#mortgage_car_bottom_div_foot_context_platform span{
+	margin: 0 auto;
+	top: 5px;
+	position: relative;
+}
+#mortgage_car_bottom_div_foot_context_platform a {
+	font-size: 14px;
+	color: #018be2;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#mortgage_car_bottom_div_foot_context_number {
+	width: 1100px;
+	height: 30px;
+	color: #666;
+	font-size: 14px;
+}

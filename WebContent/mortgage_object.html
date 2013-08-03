@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="scripts/jquery-1.10.1.js"></script>
+<link rel="stylesheet" type="text/css" href="css/mortgage_objectstyle.css">
+<link rel="shortcut icon" href="images/logo_mini.ico" />
+
+<script type="text/javascript">
+	var nowmortgage_object;
+	var submenu;
+	var menuitem;
+	var leftmenu;
+	var leftmenuitem;
+	
+	$(document).ready(function(){
+		//初始化
+		init();
+		//初始化头部的菜单
+		$(".mortgage_object_top_div_menu_li").mouseover(function(){
+				nowmortgage_object=$(this).index();
+				submenu.hide();
+				$(submenu[nowmortgage_object]).show();
+			});
+		
+		//left 菜单的切换
+		$(".mortgage_object_center_div_inside_left_li").click(function(){
+			var nowleftmenu=$(this).index();
+			var leftul=$(".mortgage_object_center_div_inside_left_ul_item");
+			$(leftul[nowleftmenu]).slideToggle();
+		});
+		
+		function init(){
+			submenu=$(".mortgage_object_top_div_menu_sub_p");
+			$(submenu[2]).show();
+			
+			menuitem=$(".mortgage_object_top_div_menu_li");
+			$(menuitem[2]).css("background-color","gray");
+			initLeftMenu();
+			
+			var leftul=$(".mortgage_object_center_div_inside_left_ul_item");
+			$(leftul[1]).show();
+			
+		}
+		//初始化左菜单
+		function initLeftMenu(){
+			leftmenu=$(".mortgage_object_center_div_inside_left_li");
+			leftmenuul=$(".mortgage_object_center_div_inside_left_ul_item");
+		}
+		
+	});
+</script>
+<!--贷款，融资，车贷，房贷  -->
+<meta name="keywords" content="贷款，融资，车贷，房贷,">
+<meta name="description" content="贷款，融资，车贷，房贷，成都道诚资产管理有限公司！">
+<title>道诚资产管理有限公司，贷款，融资，车贷，房贷</title>
+</head>
+<body>
+
+	<div id="mortgage_object_super_div">
+<!--head  -->
+		<div id="mortgage_object_top_div">
+			<div id="mortgage_object_top_head">
+				<div id="mortgage_object_top_head_logo">
+					<img alt="道诚资产管理有限公司" title="道诚资产管理有限公司，贷款，融资，车贷，房贷" src="images/logo_daocheng.png">
+				</div>
+				<div id="mortgage_object_top_head_login">
+					<a href="http://exmail.qq.com/login"  id="mortgage_object_top_head_a">信贷经理登录</a>
+				</div>
+			</div>
+			<div id=mortgage_object_top_div_menu>
+				<!-- 菜单选项 -->
+				<ul id="mortgage_object_top_div_menu_ul">
+					<li class="mortgage_object_top_div_menu_li"><a href="/index.html" class="mortgage_object_top_div_menu_li_a">首页</a></li>
+					<li class="mortgage_object_top_div_menu_li"><a href="/unsecured.html" class="mortgage_object_top_div_menu_li_a">无抵押信用贷款</a></li>
+					<li class="mortgage_object_top_div_menu_li"><a href="/mortgage.html" class="mortgage_object_top_div_menu_li_a">企业抵押贷款</a></li>
+					<li class="mortgage_object_top_div_menu_li"><a href="/banks.html" class="mortgage_object_top_div_menu_li_a">合作银行</a></li>
+					<li class="mortgage_object_top_div_menu_li"><a href="/zheren.html" class="mortgage_object_top_div_menu_li_a">社会责任</a></li>
+					<li class="mortgage_object_top_div_menu_li"><a href="/about.html" class="mortgage_object_top_div_menu_li_a">关于道诚</a></li>
+				</ul>
+
+			</div>
+		</div>
+		<!-- 子选项 -->
+		<div id="mortgage_object_top_div_submenu">
+				
+				<div id="mortgage_object_top_div_menu_sub">
+						<p class="mortgage_object_top_div_menu_sub_p">
+						</p>
+						<p class="mortgage_object_top_div_menu_sub_p">
+							<span style="margin-left: 181px"></span>
+							<a href="/unsecured_person.html">个人小额便民贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="/unsecured_cards.html">商汇通卡</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="/unsecured_businessflow.html">企业流动资金贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="/unsecured_businessbail.html">企业贷款（联保）</a>&nbsp;&nbsp;
+						</p>
+						
+						<p class="mortgage_object_top_div_menu_sub_p">
+							<span style="margin-left: 364px"></span>
+							<a href="/mortgage_house.html">个人房产抵押贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="/mortgage_car.html">个人房产汽车贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="/mortgage_object.html">贷款主体</a>&nbsp;&nbsp;
+						</p>
+						
+						<p class="mortgage_object_top_div_menu_sub_p">
+							<span style="margin-left: 546px"></span>
+							<a href="/banks.html">银行合作伙伴</a>
+						</p>
+
+						<p class="mortgage_object_top_div_menu_sub_p">
+							<span style="margin-left: 727px"></span>
+							<a href="/zheren.html">道诚社会责任</a>
+						</p>
+						
+						<p class="mortgage_object_top_div_menu_sub_p">
+							<span style="margin-left: 900px"></span>
+							<a href="/about_join.html">加入道诚</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="/about.html">关于道诚</a>					
+						</p>
+				</div>
+		</div>
+<!-- center -->
+		<div id="mortgage_object_center_div">
+			<div id="mortgage_object_center_div_outside">
+			<!-- adtitle -->
+			<div id="mortgage_object_center_div_top">
+				<img src="images/banner_mortgage.jpg">
+			</div>
+			<!-- 内容 -->
+			<div id="mortgage_object_center_div_inside">
+				<div id="mortgage_object_center_div_inside_left">
+					<div id="mortgage_object_center_div_inside_left_menu">
+						<ul id="mortgage_object_center_div_inside_left_ul">
+							<li class="mortgage_object_center_div_inside_left_li">
+								<div class="mortgage_object_center_div_inside_left_li_div">
+								<a href="#"  class="mortgage_object_center_div_inside_left_a">无抵押信用贷款</a>
+								</div>
+								<ul class="mortgage_object_center_div_inside_left_ul_item">
+									<li class="mortgage_object_center_div_inside_left_li_item"><a href="/unsecured_person.html" class="mortgage_object_center_div_inside_left_li_item_a">个人小额便民贷款</a>
+									</li>
+									<li class="mortgage_object_center_div_inside_left_li_item"><a href="/unsecured_cards.html" class="mortgage_object_center_div_inside_left_li_item_a">商汇通卡</a>
+									</li>
+									<li class="mortgage_object_center_div_inside_left_li_item"><a href="/unsecured_businessflow.html" class="mortgage_object_center_div_inside_left_li_item_a">企业流动资金贷款</a>
+									</li>
+									<li class="mortgage_object_center_div_inside_left_li_item"><a href="/unsecured_businessbail.html" class="mortgage_object_center_div_inside_left_li_item_a">企业贷款（联保）</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mortgage_object_center_div_inside_left_li">
+								<div class="mortgage_object_center_div_inside_left_li_div">
+								<a href="#"  class="mortgage_object_center_div_inside_left_a">企业抵押贷款</a>
+								</div>
+								<ul class="mortgage_object_center_div_inside_left_ul_item">
+									<li class="mortgage_object_center_div_inside_left_li_item"><a href="/mortgage_house.html" class="mortgage_object_center_div_inside_left_li_item_a">个人房产抵押贷款</a>
+									</li>
+									<li class="mortgage_object_center_div_inside_left_li_item"><a href="/mortgage_car.html" class="mortgage_object_center_div_inside_left_li_item_a">个人房产汽车贷款</a>
+									</li>
+									<li class="mortgage_object_center_div_inside_left_li_item"><a href="/mortgage_object.html" class="mortgage_object_center_div_inside_left_li_item_a">贷款主体</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mortgage_object_center_div_inside_left_li">
+								<div class="mortgage_object_center_div_inside_left_li_div">
+								<a href="#"  class="mortgage_object_center_div_inside_left_a">合作银行</a>
+								</div>
+								<ul class="mortgage_object_center_div_inside_left_ul_item">
+									<li class="mortgage_object_center_div_inside_left_li_item"><a href="/about.html" class="mortgage_object_center_div_inside_left_li_item_a">银行合作伙伴</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mortgage_object_center_div_inside_left_li">
+								<div class="mortgage_object_center_div_inside_left_li_div">
+								<a href="#"  class="mortgage_object_center_div_inside_left_a">社会责任</a>
+								</div>
+								<ul class="mortgage_object_center_div_inside_left_ul_item">
+									<li class="mortgage_object_center_div_inside_left_li_item"><a href="/zheren.html" class="mortgage_object_center_div_inside_left_li_item_a">道诚社会责任</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mortgage_object_center_div_inside_left_li">
+								<div class="mortgage_object_center_div_inside_left_li_div">
+								<a href="#"  class="mortgage_object_center_div_inside_left_a">关于道诚</a>
+								</div>
+								<ul class="mortgage_object_center_div_inside_left_ul_item">
+									<li class="mortgage_object_center_div_inside_left_li_item"><a href="/about_join.html" class="mortgage_object_center_div_inside_left_li_item_a">加入道诚</a>
+									</li>
+									<li class="mortgage_object_center_div_inside_left_li_item"><a href="/about.html" class="mortgage_object_center_div_inside_left_li_item_a">关于道诚</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="mortgage_object_center_div_inside_right">
+					<div id="mortgage_object_center_div_inside_right_div">
+							<div id="mortgage_object_center_div_inside_right_div_title">
+									<div id="mortgage_object_center_div_inside_right_div_title_h2">
+										<h2>贷款主体</h2>
+									</div>
+									<div id="mortgage_object_center_div_inside_right_div_title_h5">
+										<h5>Mortgage Object</h5>
+									</div>
+							</div>
+							<div id="mortgage_object_center_div_inside_right_div_content">
+								<p id="mortgage_bank_center_div_inside_right_div_content_p">
+								贷款主体<br>
+								为广大客户提供四川省范围实体经营企业，所有企业经营情况良好，无负债，以商贸型企业、生产型企业为主，提供主体全套资料，可根据客户贷款需求制定完整贷款方案。欢迎面洽！<br><br>
+								（1）承兑汇票，打保证金，收票，银行做定存回报。<br>
+								（2）资金托管服务，年回报18%，每月返息。保本收益。<br>
+								（3）预售房备案：月息3分左右。<br>
+								（4）为贷款的公司主体包装整理资料，（送银行的资料审批快）。<br>
+										
+								</p>
+								<div id="mortgage_object_center_div_inside_right_div_content_div">
+									<div id="mortgage_object_center_div_inside_right_div_content_div_title">
+										<p>道诚公司为个人和企业提供全方位多渠道抵押贷款的服务，包括：</p>
+									</div>
+									<div id="mortgage_object_center_div_inside_right_div_content_div_content">
+										
+										<div class="mortgage_object_center_div_inside_right_div_content_div_content_div">
+											<div class="mortgage_object_center_div_inside_right_div_content_div_content_div_inside">
+													<div class="mortgage_object_center_div_inside_right_div_content_div_content_div_inside_img">
+														<img src="images/mortgage_house.png">
+													</div>
+													<p>个人房产抵押银行贷款</p>
+													<a href="/mortgage_house.html">更多详情 >></a>
+											</div>
+										</div>
+										<div class="mortgage_object_center_div_inside_right_div_content_div_content_div">
+											<div class="mortgage_object_center_div_inside_right_div_content_div_content_div_inside">
+													<div class="mortgage_object_center_div_inside_right_div_content_div_content_div_inside_img">
+														<img src="images/mortgage_cars.png">
+													</div>
+													<p>个人房产汽车短期贷款</p>
+													<a href="/mortgage_car.html">更多详情 >></a>
+											</div>
+										</div>
+										<div class="mortgage_object_center_div_inside_right_div_content_div_content_div">
+											<div class="mortgage_object_center_div_inside_right_div_content_div_content_div_inside">
+													<div class="mortgage_object_center_div_inside_right_div_content_div_content_div_inside_img">
+														<img src="images/mortgage_object.png">
+													</div>
+													<p>贷款主体</p>
+													<a href="/mortgage_object.html">更多详情 >></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+<!-- bottom -->
+
+<!-- footer -->
+		<div id="mortgage_object_bottom_div_foot">
+			<div id="mortgage_object_bottom_div_foot_context">
+				<div id="mortgage_object_bottom_div_foot_context_link">
+					<div>
+					<a href="/banks.html">合作伙伴</a><span>|</span>
+					<a href="/zheren.html">社会责任</a><span>|</span>
+					<a href="http://exmail.qq.com/login">信贷经理入驻</a><span >|</span>
+					<a href="/about.html">关于道诚</a><span>|</span>
+					<a href="/about_join.html">加入我们</a>
+					</div>
+				</div>
+
+				<div id="mortgage_object_bottom_div_foot_context_platform">
+					<span><a>蜀ICP备13005177号-1</a>&nbsp;&nbsp;<a href="#">成都道诚资产管理有限公司</a>&nbsp;版权所有</span>
+				</div>
+				<div id="mortgage_object_bottom_div_foot_context_copyright">
+					<span>Copyright &copy; 2013 daochengamc.com Inc. All Rights Reserved. </span>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=0&amp;pos=right&amp;uid=6741054" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<!-- Baidu Button END -->
+</body>
+</html>

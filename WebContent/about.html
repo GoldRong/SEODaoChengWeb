@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="scripts/jquery-1.10.1.js"></script>
+<link rel="stylesheet" type="text/css" href="css/aboutstyle.css">
+<link rel="shortcut icon" href="images/logo_mini.ico" />
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<style type="text/css">
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript">
+	var nowabout;
+	var submenu;
+	var menuitem;
+	var leftmenu;
+	var leftmenuitem;
+	
+	$(document).ready(function(){
+		//初始化
+		init();
+		//初始化头部的菜单
+		$(".about_top_div_menu_li").mouseover(function(){
+				nowabout=$(this).index();
+				submenu.hide();
+				$(submenu[nowabout]).show();
+			});
+		
+		//left 菜单的切换
+		$("#about_center_div_inside_left_li_div_unsecured").click(function(){
+			$("#about_center_div_inside_left_ul_item_unsecured").slideToggle();
+		});
+		$("#about_center_div_inside_left_li_div_mortgage").click(function(){
+			$("#about_center_div_inside_left_ul_item_mortgage").slideToggle();
+		});
+		$("#about_center_div_inside_left_li_div_banks").click(function(){
+			$("#about_center_div_inside_left_ul_item_banks").slideToggle();
+		});
+		$("#about_center_div_inside_left_li_div_zheren").click(function(){
+			$("#about_center_div_inside_left_ul_item_zheren").slideToggle();
+		});
+		$("#about_center_div_inside_left_li_div_about").click(function(){
+			$("#about_center_div_inside_left_ul_item_about").slideToggle();
+		});
+		
+		function init(){
+			submenu=$(".about_top_div_menu_sub_p");
+			$(submenu[5]).show();
+			
+			menuitem=$(".about_top_div_menu_li");
+			$(menuitem[5]).css("background-color","gray");
+			initLeftMenu();
+			
+			var leftul=$(".about_center_div_inside_left_ul_item");
+			$(leftul[4]).show();
+			
+		}
+		//初始化左菜单
+		function initLeftMenu(){
+			leftmenu=$(".about_center_div_inside_left_li");
+			leftmenuul=$(".about_center_div_inside_left_ul_item");
+		}
+		//初始化百度地图
+		function initBaiduMap(){
+			
+		}
+	});
+</script>
+<!--贷款，融资，车贷，房贷  -->
+<meta name="keywords" content="贷款，融资，车贷，房贷,">
+<meta name="description" content="贷款，融资，车贷，房贷，成都道诚资产管理有限公司！">
+<title>道诚资产管理有限公司，贷款，融资，车贷，房贷</title>
+</head>
+<body>
+
+	<div id="about_super_div">
+<!--head  -->
+		<div id="about_top_div">
+			<div id="about_top_head">
+				<div id="about_top_head_logo">
+					<img alt="道诚资产管理有限公司" title="道诚资产管理有限公司，贷款，融资，车贷，房贷" src="images/logo_daocheng.png">
+				</div>
+				<div id="about_top_head_login">
+					<a href="http://exmail.qq.com/login" id="about_top_head_a">信贷经理登录</a>
+				</div>
+			</div>
+			<div id=about_top_div_menu>
+				<!-- 菜单选项 -->
+				<ul id="about_top_div_menu_ul">
+					<li class="about_top_div_menu_li"><a href="/index.html" class="about_top_div_menu_li_a">首页</a></li>
+					<li class="about_top_div_menu_li"><a href="/unsecured.html" class="about_top_div_menu_li_a">无抵押信用贷款</a></li>
+					<li class="about_top_div_menu_li"><a href="/mortgage.html" class="about_top_div_menu_li_a">企业抵押贷款</a></li>
+					<li class="about_top_div_menu_li"><a href="/banks.html" class="about_top_div_menu_li_a">合作银行</a></li>
+					<li class="about_top_div_menu_li"><a href="/zheren.html" class="about_top_div_menu_li_a">社会责任</a></li>
+					<li class="about_top_div_menu_li"><a href="/about.html" class="about_top_div_menu_li_a">关于道诚</a></li>
+				</ul>
+
+			</div>
+		</div>
+		<!-- 子选项 -->
+		<div id="about_top_div_submenu">
+				
+				<div id="about_top_div_menu_sub">
+						<p class="about_top_div_menu_sub_p">
+						</p>
+						<p class="about_top_div_menu_sub_p">
+							<span style="margin-left: 181px"></span>
+							<a href="/unsecured_person.html">个人小额便民贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="/unsecured_cards.html">商汇通卡</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="/unsecured_businessflow.html">企业流动资金贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="/unsecured_businessbail.html">企业贷款（联保）</a>&nbsp;&nbsp;
+						</p>
+						
+						<p class="about_top_div_menu_sub_p">
+							<span style="margin-left: 364px"></span>
+							<a href="/mortgage_house.html">个人房产抵押贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="/mortgage_car.html">个人房产汽车贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="/mortgage_object.html">贷款主体</a>&nbsp;&nbsp;
+						</p>
+						
+						<p class="about_top_div_menu_sub_p">
+							<span style="margin-left: 546px"></span>
+							<a href="/banks.html">银行合作伙伴</a>
+						</p>
+
+						<p class="about_top_div_menu_sub_p">
+							<span style="margin-left: 727px"></span>
+							<a href="/zheren.html">道诚社会责任</a>
+						</p>
+						
+						<p class="about_top_div_menu_sub_p">
+							<span style="margin-left: 900px"></span>
+							<a href="/about_join.html">加入道诚</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="/about.html">关于道诚</a>					
+						</p>
+				</div>
+		</div>
+<!-- center -->
+		<div id="about_center_div">
+			<div id="about_center_div_outside">
+			<!-- adtitle -->
+			<div id="about_center_div_top">
+				<img src="images/banner_about.jpg">
+			</div>
+			<!-- 内容 -->
+			<div id="about_center_div_inside">
+				<div id="about_center_div_inside_left">
+					<div id="about_center_div_inside_left_menu">
+						<ul id="about_center_div_inside_left_ul">
+							<li class="about_center_div_inside_left_li">
+								<div class="about_center_div_inside_left_li_div" id="about_center_div_inside_left_li_div_unsecured">
+								<a href="#"  class="about_center_div_inside_left_a">无抵押信用贷款</a>
+								</div>
+								<ul class="about_center_div_inside_left_ul_item" id="about_center_div_inside_left_ul_item_unsecured">
+									<li class="about_center_div_inside_left_li_item"><a href="/unsecured_person.html" class="about_center_div_inside_left_li_item_a">个人小额便民贷款</a>
+									</li>
+									<li class="about_center_div_inside_left_li_item"><a href="/unsecured_cards.html" class="about_center_div_inside_left_li_item_a">商汇通卡</a>
+									</li>
+									<li class="about_center_div_inside_left_li_item"><a href="/unsecured_businessflow.html" class="about_center_div_inside_left_li_item_a">企业流动资金贷款</a>
+									</li>
+									<li class="about_center_div_inside_left_li_item"><a href="/unsecured_businessbail.html" class="about_center_div_inside_left_li_item_a">企业贷款（联保）</a>
+									</li>
+								</ul>
+							</li>
+							<li class="about_center_div_inside_left_li">
+								<div class="about_center_div_inside_left_li_div" id="about_center_div_inside_left_li_div_mortgage">
+								<a href="#"  class="about_center_div_inside_left_a">企业抵押贷款</a>
+								</div>
+								<ul class="about_center_div_inside_left_ul_item" id="about_center_div_inside_left_ul_item_mortgage">
+									<li class="about_center_div_inside_left_li_item"><a href="/mortgage_house.html" class="about_center_div_inside_left_li_item_a">个人房产抵押贷款</a>
+									</li>
+									<li class="about_center_div_inside_left_li_item"><a href="/mortgage_car.html" class="about_center_div_inside_left_li_item_a">个人房产汽车贷款</a>
+									</li>
+									<li class="about_center_div_inside_left_li_item"><a href="/mortgage_object.html" class="about_center_div_inside_left_li_item_a">贷款主体</a>
+									</li>
+								</ul>
+							</li>
+							<li class="about_center_div_inside_left_li">
+								<div class="about_center_div_inside_left_li_div" id="about_center_div_inside_left_li_div_banks">
+								<a href="#"  class="about_center_div_inside_left_a">合作银行</a>
+								</div>
+								<ul class="about_center_div_inside_left_ul_item" id="about_center_div_inside_left_ul_item_banks">
+									<li class="about_center_div_inside_left_li_item"><a href="/banks.html" class="about_center_div_inside_left_li_item_a">银行合作伙伴</a>
+									</li>
+								</ul>
+							</li>
+							<li class="about_center_div_inside_left_li">
+								<div class="about_center_div_inside_left_li_div" id="about_center_div_inside_left_li_div_zheren">
+								<a href="#"  class="about_center_div_inside_left_a">社会责任</a>
+								</div>
+								<ul class="about_center_div_inside_left_ul_item" id="about_center_div_inside_left_ul_item_zheren">
+									<li class="about_center_div_inside_left_li_item"><a href="/zheren.html" class="about_center_div_inside_left_li_item_a">道诚社会责任</a>
+									</li>
+								</ul>
+							</li>
+							<li class="about_center_div_inside_left_li">
+								<div class="about_center_div_inside_left_li_div" id="about_center_div_inside_left_li_div_about">
+								<a href="#"  class="about_center_div_inside_left_a">关于道诚</a>
+								</div>
+								<ul class="about_center_div_inside_left_ul_item" id="about_center_div_inside_left_ul_item_about">
+									<li class="about_center_div_inside_left_li_item"><a href="/about_join.html" class="about_center_div_inside_left_li_item_a">加入道诚</a>
+									</li>
+									<li class="about_center_div_inside_left_li_item"><a href="/about.html" class="about_center_div_inside_left_li_item_a">关于道诚</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="about_center_div_inside_right">
+					<div id="about_center_div_inside_right_div">
+							<div id="about_center_div_inside_right_div_title">
+									<div id="about_center_div_inside_right_div_title_h2">
+										<h2>关于道诚</h2>
+									</div>
+									<div id="about_center_div_inside_right_div_title_h5">
+										<h5>DaoCheng About</h5>
+									</div>
+							</div>
+							<div id="about_center_div_inside_right_div_content">
+								<p id="about_center_div_inside_right_div_content_p">
+									成都道诚资产管理有限公司“立足于四川省工商联石材商会”本着以客户客户为主，服务至上。贷款业务手续简便快捷，贷款机制灵活，抵、质押范围宽，快速解决“三农”、微型企业和中小企业生产经营过程中小额、临时性资金需求，为客户提供优质高效的服务。公司深知服务是我们生存的基础，创新是我们发展的根本。公司不断吸取行业经验，同时结合自身行业特征与市场现状，积极调整企业的经营战略和经营方式，创造出真正满足具有资金需求的企业与个人的制度与流程我们审视自我，放眼全局，不断进取，现公司正步入一个高速发展的阶段，我们希望各类优秀人才加入公司，与我们共发展，将公司打造为行业的标杆企业
+									<br><br>
+									联系电话：028-86650085<br>
+									公司地址：成都市锦江区大慈寺路3号朗御大厦1单元29楼3号<br>
+								</p>
+								<div id="about_center_div_inside_right_div_content_div">
+								  	<!--百度地图容器-->
+  									<div style="width:800px;height:320px;border:#ccc solid 1px;" id="dituContent"></div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+<!-- bottom -->
+
+<!-- footer -->
+		<div id="about_bottom_div_foot">
+			<div id="about_bottom_div_foot_context">
+				<div id="about_bottom_div_foot_context_link">
+					<div>
+					<a href="/banks.html">合作伙伴</a><span>|</span>
+					<a href="/zheren.html">社会责任</a><span>|</span>
+					<a href="http://exmail.qq.com/login">信贷经理入驻</a><span >|</span>
+					<a href="/about.html">关于道诚</a><span>|</span>
+					<a href="/about_join.html">加入我们</a>
+					</div>
+				</div>
+
+				<div id="about_bottom_div_foot_context_platform">
+					<span><a>蜀ICP备13005177号-1</a>&nbsp;&nbsp;<a href="#">成都道诚资产管理有限公司</a>&nbsp;版权所有</span>
+				</div>
+				<div id="about_bottom_div_foot_context_copyright">
+					<span>Copyright &copy; 2013 daochengamc.com Inc. All Rights Reserved. </span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=0&amp;pos=right&amp;uid=6741054" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<!-- Baidu Button END -->
+
+</body>
+</html>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(104.093893,30.659434);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_SMALL});
+	map.addControl(ctrl_nav);
+                //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_TOP_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"道诚资产管理有限公司",content:"公司地址：成都市锦江区大慈寺路3号朗御大厦1单元29楼3号<br/>联系电话：028-86650085",point:"104.093538|30.659581",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>

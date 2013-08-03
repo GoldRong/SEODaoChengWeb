@@ -1,0 +1,251 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color:white;
+	margin: 0;
+	margin-top: 20px;
+	font-family:'Microsoft YaHei',STHeiti,sans-serif;
+}
+
+#index_super_div {
+	width: auto;
+	height: auto;
+}
+
+#index_top_div {
+	margin: 0 auto;
+	width: 1100px;
+	height: 100px;
+}
+
+#index_top_head {
+	margin: 0 auto;
+	width: 1100px;
+	height: 65px;
+	background-color: transparent;
+}
+
+#index_top_head_logo {
+	float: left;
+}
+
+#index_top_head_a {
+	text-decoration: none;
+	color: #666666;
+	font-size: 14px;
+}
+
+#index_top_head_a:HOVER {
+	color: blue;
+}
+
+#index_top_head_login {
+	float: right;
+	margin-right: 15px;
+	margin-top: 15px;
+}
+
+#index_top_div_menu {
+	margin: 0 auto;
+	width: 1100px;
+	height: 65px;
+	background-color: transparent;
+}
+
+#index_top_div_menu_ul {
+	width: 1100px;
+	height: 35px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	background-color: transparent;
+}
+
+.index_top_div_menu_li {
+	float: left;
+	width: 181px;
+	height: 35px;
+	background-color: #b20000;
+	margin-right: 2px;
+}
+
+.index_top_div_menu_li:HOVER {
+	background-color: gray;
+}
+
+.index_top_div_menu_li_a {
+	float:left;
+	padding-top:8px;
+	padding-left:40px;
+	text-decoration: none;
+	width:165px; 
+	color: white;
+	font-size:16px;
+	font-weight:bold;
+	margin: 0 auto;
+}
+
+#index_top_div_submenu{
+	width:auto;
+	height:30px;
+	background-color: transparent;
+	background:#fff url(../images/main2_bg.jpg) 0 0 repeat-x;
+}
+
+#index_top_div_menu_sub{
+	margin: 0 auto;
+	width:1100px;
+	height:30px;
+	background-color: transparent;
+}
+.index_top_div_menu_sub_p{
+	margin: 0;
+	padding: 0;
+	padding-top:5px;
+	display: none;
+}
+
+.index_top_div_menu_sub_p a{
+	color: gray;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.index_top_div_menu_sub_p a:HOVER{
+	color: blue;
+}
+#index_center_div {
+	margin: 0 auto;
+	width: 100%;
+	height: 420px;
+	background-color: transparent;
+}
+
+#index_center_div_outside {
+	width: 1100px;
+	height: 422px;
+	margin: 0 auto;
+	background-color: transparent;
+}
+#KinSlideshow{
+	
+}
+#index_bottom_div {
+	margin: 0 auto;
+	width: 1100px;
+	height: 150px;
+	background-color: #fefefe;
+}
+
+
+#index_bottom_div_bank {
+	margin: 0 auto;
+	width: 1100px;
+	height: 150px;
+}
+
+#index_bottom_div_bank_title {
+	background-color: #F1F7FC;
+	width: 1100px;
+	height: 40px;
+}
+
+#index_bottom_div_bank_title div {
+	float: left;
+	margin-top: 8px;
+	margin-left: 20px;
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+#index_bottom_div_bank_context {
+	width: 1100px;
+	height: 110px;
+	background-color: #fefefe;
+}
+
+#index_bottom_div_bank_context img {
+	margin-left: 20px;
+	margin-top: 10px;
+	width: 1100px;
+	height: 89px;
+}
+
+#index_bottom_div_foot {
+	width: auto;
+	height: 160px;
+	background-color: #e8edf2;
+}
+
+#index_bottom_div_foot_context {
+	margin: 0 auto;
+	height: 160px;
+	width: 1100px;
+	position: relative;
+	text-align: center;
+}
+
+#index_bottom_div_foot_context_link {
+	width: 1100px;
+	height: 40px;
+}
+
+#index_bottom_div_foot_context_link div {
+	margin: 0 auto;
+	width: 650px;
+	height: 40px;
+	padding-top: 10px;
+}
+
+#index_bottom_div_foot_context_link a {
+	text-decoration: none;
+	line-height: 30px;
+	color: #333333;
+	font-size: 14px;
+}
+
+#index_bottom_div_foot_context_link span {
+	padding: 0 15px;
+	color: #e5dab5;
+}
+
+#index_bottom_div_foot_context_copyright {
+	width: 1100px;
+	height: 30px;
+	background-color: transparent;
+}
+
+#index_bottom_div_foot_context_copyright span {
+	margin: 0 auto;
+	top: 5px;
+	position: relative;
+	color: #666;
+	font-size: 14px;
+}
+
+#index_bottom_div_foot_context_platform {
+	width: 1100px;
+	height: 30px;
+	color: #666;
+	font-size: 14px;
+	background-color: transparent;
+}
+#index_bottom_div_foot_context_platform span{
+	margin: 0 auto;
+	top: 5px;
+	position: relative;
+}
+#index_bottom_div_foot_context_platform a {
+	font-size: 14px;
+	color: #018be2;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#index_bottom_div_foot_context_number {
+	width: 1100px;
+	height: 30px;
+	color: #666;
+	font-size: 14px;
+}
