@@ -113,11 +113,12 @@ body {
 .index_top_div_menu_sub_p a{
 	color: gray;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 12px;
+	font-weight: bold;
 }
 
 .index_top_div_menu_sub_p a:HOVER{
-	color: blue;
+	color: #004ea5;
 }
 #index_center_div {
 	margin: 0 auto;
